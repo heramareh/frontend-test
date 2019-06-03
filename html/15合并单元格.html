@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>合并单元格</title>
+</head>
+<body>
+	<!-- colspan：跨列合并 -->
+	<!-- rowspan：跨行合并 -->
+	<!-- 合并顺序：先上后下，先左后右 -->
+	<table border="1">
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<td>abc</td>
+		</tr>
+		<tr>
+			<td colspan="2">123</td>
+			<!-- <td>abc</td> -->
+			<td>abc</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td colspan="2">abc</td>
+			<!-- <td>abc</td> -->
+		</tr>
+	</table>
+	<table border="1">
+		<tr>
+			<td>123</td>
+			<td rowspan="3">abc</td>
+			<td>abc</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<!-- <td>abc</td> -->
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<!-- <td>abc</td> -->
+		</tr>
+	</table>
+</body>
+</html>
