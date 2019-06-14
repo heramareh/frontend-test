@@ -1,0 +1,40 @@
+/*先删除默认的内外边距*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fafafa;
+}
+li {
+    list-style: none; /*取消li的小点*/
+}
+/*顶部导航栏*/
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+.header-inner {
+    width: 1240px;
+    height: 100px;
+    margin: auto;
+    line-height: 100px;
+}
+.logo {
+    float: left;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    height: 100px;
+    float: left;
+    margin: 0 20px;
+}
+.nav li a {
+    color: #333333;
+    text-decoration: none;
+}
+.nav li a:hover {
+    color: #2288f6;
+}
