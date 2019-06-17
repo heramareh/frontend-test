@@ -38,3 +38,23 @@ li {
 .nav li a:hover {
     color: #2288f6;
 }
+/*banner start*/
+.banner {
+    height: 620px;
+    background: url(../images/banner_qywh.jpg) no-repeat top center;
+}
+/*banner end*/
+/*service star*/
+.service {
+    width: 1055px;
+    height: 660px;
+    margin: 75px auto 0;
+    background-color: pink;
+}
+.service-hd {
+    margin: 0 25px;
+    border-top: 1px solid #cccccc;
+}
+.service-bd {
+
+}
