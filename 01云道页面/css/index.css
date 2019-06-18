@@ -11,14 +11,13 @@ li {
 }
 /*顶部导航栏*/
 .header {
-    height: 100px;
+    height: 88px;
     background-color: #fff;
 }
 .header-inner {
     width: 1240px;
-    height: 100px;
     margin: auto;
-    line-height: 100px;
+    line-height: 88px;
 }
 .logo {
     float: left;
@@ -27,7 +26,7 @@ li {
     float: right;
 }
 .nav li {
-    height: 100px;
+    height: 88px;
     float: left;
     margin: 0 20px;
 }
@@ -41,7 +40,8 @@ li {
 /*banner start*/
 .banner {
     height: 620px;
-    background: url(../images/banner_qywh.jpg) no-repeat top center;
+    background: url(../images/banner_qywh.jpg) no-repeat center center;
+    background-color: black;
 }
 /*banner end*/
 /*service star*/
