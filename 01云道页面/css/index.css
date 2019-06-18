@@ -49,11 +49,25 @@ li {
     width: 1055px;
     height: 660px;
     margin: 75px auto 0;
-    background-color: pink;
+    /*background-color: pink;*/
 }
 .service-hd {
     margin: 0 25px;
     border-top: 1px solid #cccccc;
+}
+.service-hd h3 {
+    width: 167px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+.service-hd p {
+    font-size: 12px;
+    color: #666666;
+    line-height: 26px;
+    text-align: center;
+    width: 831px;
+    margin: 0 auto;
 }
 .service-bd {
 
