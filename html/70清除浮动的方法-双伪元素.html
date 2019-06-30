@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearfix:before, .clearfix:after {  /*正常浏览器 清除浮动*/
+            content: '';
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1; /*ie6清除浮动的方式  * ie7以下的版本所识别*/
+        }
+        .father {
+            width: 200px;
+            border: 1px solid red;
+        }
+        .big {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+        }
+        .small {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            float: left;
+        }
+        .footer {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="father clearfix">
+        <div class="big"></div>
+        <div class="small"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

@@ -25,6 +25,9 @@ li {
 .nav {
     float: right;
 }
+.nav ul {
+    overflow: hidden;
+}
 .nav li {
     height: 88px;
     float: left;
@@ -70,5 +73,14 @@ li {
     margin: 0 auto;
 }
 .service-bd {
-
+    margin-top: 40px;
+}
+.service-bd li {
+    width: 320px;
+    height: 510px;
+    background-color: pink;
+    float: left;
+}
+.yingxiao {
+    margin: 0 45px;
 }
