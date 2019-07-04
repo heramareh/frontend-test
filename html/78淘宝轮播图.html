@@ -15,7 +15,7 @@
             margin: 100px auto;
             position: relative;
         }
-        .tb > a {
+        .tb a {
             width: 24px;
             height: 36px;
             background-color: #cccccc;
@@ -27,7 +27,7 @@
             line-height: 46px;
             background: rgba(255, 255, 255, 0.3);
         }
-        .tb > a:hover {
+        .tb a:hover {
             background-color: #cccccc;
             background: rgba(255, 255, 255, 0.6);
         }
@@ -38,31 +38,27 @@
             right: 0;
         }
         .tb ul {
+            width: 70px;
             height: 13px;
             position: absolute;
             background-color: #cccccc;
             display: block;
             left: 50%;
-            margin-left: -50px;
-            bottom: 30px;
+            margin-left: -35px;
+            bottom: 10px;
             border-radius: 10px;
             background: rgba(255, 255, 255, 0.3);
         }
         .tb ul li {
-            list-style: none;
-            display: inline-block;
-            text-decoration: none;
-            float: left;
-            margin: 3px;
-        }
-        .tb ul a {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            display: block;
+            list-style: none;
+            float: left;
+            margin: 3px;
             background-color: #fff;
         }
-        .tb ul a:hover {
+        .tb .current {
             background-color: #ff5000;
         }
     </style>
@@ -77,11 +73,11 @@
             <img src="../images/right.png" width="20" height="20" alt="">
         </a>
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </div>
 </body>
