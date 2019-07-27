@@ -15,7 +15,7 @@
 .jd-inner .gg {
     display: block;
     overflow: hidden;
-    width: 350px;
+    width: 250px;
     height: 470px;
     position: absolute;
     top: 10px;
@@ -74,11 +74,81 @@
 .jd-clo2 {
     width: 790px;
     height: 480px;
-    background-color: purple;
+    /*background-color: purple;*/
     float: left;
     margin: 0 10px;
 }
-
+.lunbo {
+    width: 590px;
+    height: 470px;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+.lunbo a {
+    width: 590px;
+    height: 470px;
+    display: block;
+}
+.lunbo button {
+    width: 25px;
+    height: 40px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 235px;
+    margin-top: -20px;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.lunbo button:hover {
+    background: rgba(0,0,0,.6);
+}
+.lunbo .bl {
+    left: 0;
+}
+.lunbo .br {
+    right: 0;
+}
+.lunbo ul {
+    width: 144px;
+    height: 12px;
+    position: absolute;
+    left: 295px;
+    margin-left: -72px;
+    bottom: 20px;
+    background: rgba(0,0,0,.3);
+    border-radius: 12px;
+}
+.lunbo ul li {
+    width: 8px;
+    height: 8px;
+    float: left;
+    border-radius: 50%;
+    margin: 2px 5px;
+    background-color: #ffffff;
+}
+.lunbo .selected {
+    background-color: #f10215;
+}
+.zhu {
+    width: 190px;
+    height: 470px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.zhu a {
+    width: 190px;
+    height: 150px;
+    display: block;
+}
+.zhu a img {
+    width: 190px;
+}
+.zhu .zhu2 {
+    margin: 10px 0;
+}
 .jd-clo3 {
     width: 190px;
     height: 480px;
