@@ -1,4 +1,14 @@
 
+.clearfix:before, .clearfix:after {  /*正常浏览器 清除浮动*/
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*ie6清除浮动的方式  * ie7以下的版本所识别*/
+}
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?e3y84p');
@@ -29,13 +39,26 @@ li {
     list-style: none;
 }
 
-ul {
+ul, h1, h5, p, input, button, dd {
     margin: 0;
     padding: 0;
 }
 
+input, button {
+    padding: 0;
+    border: 0;
+}
+
 i {
     font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F6F6F6;
 }
 
 /*京东顶部 start*/
@@ -113,14 +136,18 @@ i {
     top: -2px;
     font-size: 16px;
 }
+.mobile-jd {
+    position: relative;
+}
 .erweima {
     width: 60px;
     height: 60px;
     border: 1px solid #cccccc;
     padding: 3px;
     position: absolute;
-    left: -10px;
+    left: -20px;
     top: 30px;
+    z-index: 1;
 }
 /*京东导航结束*/
 /*header start*/
@@ -129,6 +156,284 @@ i {
 }
 .inner {
     height: 140px;
-    background-color: pink;
+    /*background-color: pink;*/
+    position: relative;
+}
+.logo {
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    background-color: red;
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+}
+.logo h1 {
+    width: 100%;
+    height: 100%;
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/logo.png") no-repeat;
+    text-indent: -2em;
+    overflow: hidden;
+}
+.search {
+    width: 550px;
+    height: 35px;
+    background-color: purple;
+    position: absolute;
+    left: 320px;
+    top: 25px;
+}
+.search input {
+    width: 493px;
+    height: 33px;
+    border: 1px solid #f10215;
+    padding: 0 0 0 5px;
+    outline: none;
+    color: #989898;
+    float: left;
+}
+.search button {
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    float: left;
+    cursor: pointer;
+    outline: none;
+}
+.search i {
+    font-family: "icomoon";
+    color: #ffffff;
+    font-size: 14px;
+}
+.search em {
+    position: absolute;
+    top: 10px;
+    right: 65px;
+    width: 19px;
+    height: 15px;
+    background: url("../images/sprite-photo-search.png") no-repeat;
+    cursor: pointer;
+}
+.search em:hover {
+    background-position: -30px 0;
+}
+
+.hotwords {
+    position: absolute;
+    left: 320px;
+    top: 70px;
+}
+.hotwords a {
+    color: #9E9B99;
+    font-size: 12px;
+}
+
+.myCar {
+    width: 188px;
+    height: 33px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    text-align: center;
+    line-height: 33px;
+}
+.myCar a {
+    font-size: 12px;
+    color: #f10215;
+}
+.myCar i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #f10215;
+    margin-right: 3px;
+}
+.myCar s {
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    background-color: #f10215;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 0 4px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.navitems {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+}
+.navitems ul {
+    float: left;
+}
+.navitems ul li {
+    float: left;
+    margin-left: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.navitems li a {
+    font-size: 14px;
+    color: #555a5f;
+    font-weight: 700;
+}
+.navitems li a:hover {
+    color: #f10215;
+}
+.navitems .spacer {
+    float: left;
+    margin: 15px -10px 0 20px;
 }
 /*header end*/
+
+/*footer start*/
+.footer {
+    height: 560px;
+    background-color: #EAEAEA;
+}
+.footer-service {
+    border-bottom: 1px solid #dedede;
+}
+.footer-service-inner {
+    padding: 30px 0;
+}
+.footer-service-inner li {
+    width: 297px;
+    height: 42px;
+    float: left;
+    /*background-color: purple;*/
+}
+.service-unit {
+    width: 225px;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+}
+.service-unit h5 {
+    width: 36px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../images/sprite.footer.png") no-repeat 0 -192px;
+}
+.service-unit .kuai {
+    background: url("../images/sprite.footer.png") no-repeat -41px -192px;
+}
+.service-unit .hao {
+    background: url("../images/sprite.footer.png") no-repeat -82px -192px;
+}
+.service-unit .sheng {
+    background: url("../images/sprite.footer.png") no-repeat -123px -192px;
+}
+.service-unit p {
+    line-height: 42px;
+    margin-left: 45px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.help {
+    height: 200px;
+    /*background-color: pink;*/
+    padding-top: 20px;
+}
+.help dl {
+    float: left;
+    width: 195px;
+}
+.help dt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+    height: 30px;
+}
+.help dd {
+    height: 22px;
+}
+.help a {
+    color: #727272;
+    font-size: 12px;
+}
+.help a:hover {
+    color: #f10215;
+}
+.help .cover {
+    float: right;
+    width: 205px;
+    height: 150px;
+    background: url("../images/sprite.footer.png") no-repeat;
+}
+.cover dt {
+    text-align: center;
+}
+.cover .info {
+    width: 175px;
+    height: 50px;
+    font-size: 12px;
+    color: #727272;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 18px;
+}
+.help .more {
+    text-align: right;
+    padding-right: 10px;
+}
+.copyright {
+    border-top: 1px solid #cccccc;
+}
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+.links a {
+    color: #727272;
+    font-size: 12px;
+}
+.links span {
+    color: #d4cdcd;
+    font-size: 12px;
+    margin: 0 8px;
+}
+.links a:hover {
+    color: #f10215;
+}
+.c-info {
+    margin-top: 10px;
+    text-align: center;
+    color: #9e9e9b;
+    font-size: 12px;
+    line-height: 20px;
+}
+.tupian {
+    text-align: center;
+    margin-top: 30px;
+}
+.tupian a {
+    width: 103px;
+    height: 32px;
+    display: inline-block;
+    background: url("../images/sprite.footer.png") no-repeat -205px 0;
+}
+.tupian .wangluo {
+    background: url("../images/sprite.footer.png") no-repeat -205px -37px;
+}
+.tupian .chengxin {
+    background: url("../images/sprite.footer.png") no-repeat -205px -74px;
+}
+.tupian .hulian {
+    background: url("../images/sprite.footer.png") no-repeat -205px -111px;
+}
+.tupian .xiazai {
+    background: url("../images/sprite.footer.png") no-repeat -205px -148px;
+}
+/*footer end*/
